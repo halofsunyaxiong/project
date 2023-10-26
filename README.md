@@ -18,7 +18,7 @@
 
 - 作者：孫亜雄
 - 内容：プロフィールサイト、自分ＰＲ、自分紹介など。
-- ご意見ありがとうございます場合、
+- ご意見ありがとうございます場合、[githubのリンクをクリックして、コメントを発表してください](https://github.com/halofsunyaxiong/project.git)
 - プログラムのファイル
   - index.html
   - story.html
