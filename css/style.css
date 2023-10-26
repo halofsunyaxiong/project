@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic', sans-serif;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+/* 第一コンテナー */
+.container {
+  text-align: center;
+  margin: 50px 0 0 0;
+  min-height: 100vh;
+  /*コンテナーに フレックスボックスレイアウトに設定される */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*ロカルトファイルの写真のリンク  */
+  /* background-image: url(../images/future.jpg);*/
+  /*オンライン画像共有と画像管理サービスであるImgurのリンク  */
+  background-image: url(https://i.imgur.com/ZXz0ula.jpg);
+  background-size: cover;
+  /* 背景画像の位置を固定する */
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 1000;
+  font-size: 3.4em;
+  color: rgb(36, 36, 40);
+  margin-top: 100px;
+}
+
+p {
+  max-width: 600px;
+  margin: 100px 0 0 0;
+  color: #fff;
+}
+
+
+.start {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  font-size: 2rem;
+  margin: 50px 0 0 0;
+  border-radius: 0.5rem;
+  /* 透明な効果の設置 */
+  backdrop-filter: blur(25px);
+  background: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+}
+
+.start:hover {
+  background-color: darkslategray;
+}
+
+
+.blank,
+.blankSecond {
+  width: 100%;
+  min-height: 20vh;
+}
+
+
+/* 第二コンテナー */
+.containerSecond {
+  /*ロカルトファイルの写真のリンク  */
+  background-image: url(../images/home.jpg);
+  /*オンライン画像共有と画像管理サービスであるImgurのリンク */
+  /* background-image: url(https://i.imgur.com/9eG06rt.jpg); */
+  background-size: cover;
+  /* 背景画像の位置を固定する */
+  background-attachment: fixed;
+}
+
+.group {
+  /*コンテナーにグリッドレイアウトに設定される  grid layout*/
+  display: grid;
+  /* ブラウザの画面の変化につれて、cardの数量も変わります。*/
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* 元素の間のrowとcolumnは設置します。 */
+  grid-gap: 10px;
+  /*  */
+  justify-content: space-evenly;
+  /*  */
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  padding: 25px 25px 25px 25px;
+  margin: 100px 0px 100px 0px;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(25px);
+  background: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  transition: all 0.1s ease;
+}
+/* クリックすると、cardはレスポンシブなことがあります。 */
+.card:hover {
+  transform: scale(1.1);
+}
+
+.picture,
+img {
+  width: 250px;
+  height: 167px;
+  border-radius: 0.7rem;
+}
+
+.card .info h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color:#030139;
+}
+.card .info p {
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 1rem; 
+}

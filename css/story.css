@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', YuGothic, 'Yu Gothic', sans-serif;
+}
+
+body {
+    padding: 50px;
+}
+/* コンテナー  */
+.container {
+    min-width: 100%;
+    background: linear-gradient(45deg, #231fbf, #32172f);
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: 400px 200px 200px 400px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
+}
+/* 元素1の中の写真を設置する */
+.item1 .picture img {
+    width: 200px;
+    height: 240px;
+    padding: 40px 40px;
+    margin: 50px 50px;
+    background: linear-gradient(45deg, #231fbf, #ff8ff2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
+
+}
+
+/* 元素2の位置を固定 */
+.item2 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    margin: 0 0 0 50px;
+}
+/* 元素2の中の写真を設置する */
+.item2 .photo img {
+    width: 90%;
+    height: 90%;
+    padding: 25px 25px;
+    background: linear-gradient(45deg, #231fbf, #000000);
+    box-shadow: 0 25px 85px rgba(0, 0, 0, 1);
+}
+
+/* 元素3の位置を固定 */
+.item3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    box-shadow: 0 25px 85px rgba(0, 0, 0, 1);
+    margin: 250px 50px 0 0;
+    background: linear-gradient(45deg, #5f5e7a, #b92c2c);
+}
+
+/* 元素4の位置を固定 */
+.item4 {
+    grid-column: 3/4;
+    grid-row: 2/2;
+    box-shadow: 0 25px 85px rgba(0, 0, 0, 1);
+    background: linear-gradient(45deg, #03004d, #b92c2c);
+}
+
+/* 元素5の位置を固定 */
+.item5 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    box-shadow: 0 25px 85px rgb(0, 0, 0);
+    background: linear-gradient(45deg, #03004d, #b92c2c);
+}
+
+.info {
+    width: 90%;
+    height: 90%;
+    color: #dcdcdc;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #4f4f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
